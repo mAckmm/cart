@@ -113,11 +113,7 @@ class Header extends Component {
       <header>
         <div className="container">
           <div className="brand">
-            <img
-              className="logo"
-              src="https://res.cloudinary.com/sivadass/image/upload/v1493547373/dummy-logo/Veggy.png"
-              alt="Veggy Brand Logo"
-            />
+            <h2 className="logo">SHOPSPOT</h2>
           </div>
 
           <div className="search">
@@ -151,7 +147,7 @@ class Header extends Component {
               <input
                 type="search"
                 ref="searchBox"
-                placeholder="Search for Vegetables and Fruits"
+                placeholder="Search products"
                 className="search-keyword"
                 onChange={this.props.handleSearch}
               />
@@ -213,7 +209,7 @@ class Header extends Component {
                   type="button"
                   className={this.state.cart.length > 0 ? " " : "disabled"}
                 >
-                  PROCEED TO CHECKOUT
+                  PROCEED TO SHOP
                 </button>
               </div>
             </div>

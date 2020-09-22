@@ -1,2 +1,54 @@
 @import 'base/index';
 @import 'components/index';
+
+.heading{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    padding: 10px;
+    max-width: 960px;
+    margin: 12% 0 0 0;
+    @media (max-width: 768px) {
+      padding: 8px;
+    }
+}
+
+.recommendations {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    padding: 16px;
+    max-width: 960px;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+      padding: 8px;
+    }
+    .product {
+      min-height: 355px;
+      flex-basis: calc(25% - 32px);
+      -webkit-flex-basis: calc(25% - 32px);
+      @media (max-width: 768px) {
+        flex-basis: calc(33% - 16px);
+        -webkit-flex-basis: calc(33% - 16px);
+        margin: 8px;
+      }
+      @media (max-width: 480px) {
+        flex-basis: calc(50% - 16px);
+        -webkit-flex-basis: calc(50% - 16px);
+        min-height: 313px;
+        .product-name {
+          height: 20px;
+          overflow: hidden;
+        }
+        .product-action {
+          padding: 16px 8px;
+        }
+      }
+      @media (max-width: 320px) {
+        flex-basis: 100%;
+        -webkit-flex-basis: 100%;
+      }
+    }
+  }

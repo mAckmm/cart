@@ -8,6 +8,7 @@ const LoadingProduct = () => {
       <div className="product-text" />
       <div className="product-text" />
       <div className="product-button" />
+      <span> hello</span>
     </div>
   );
 };

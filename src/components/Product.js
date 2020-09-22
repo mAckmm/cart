@@ -96,7 +96,7 @@ class Product extends Component {
               quantity
             )}
           >
-            {!this.state.isAdded ? "ADD TO CART" : "✔ ADDED"}
+            {!this.state.isAdded ? "ADD TO LIST" : "✔ ADDED"}
           </button>
         </div>
       </div>
