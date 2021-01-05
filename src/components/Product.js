@@ -61,8 +61,8 @@ class Product extends Component {
     let id = this.props.id;
     let quantity = this.props.productQuantity;
     return (
-      <div className="product">
-        <div className="product-image">
+      <div className="product" style={{ borderRadius : '40px', boxShadow : '0px 6px 16px 0px rgba(0,0,0, 0.2)' }}>
+        <div className="product-image" style={{borderTopLeftRadius : '40px'}}>
           <img
             src={image}
             alt={this.props.name}
@@ -74,6 +74,7 @@ class Product extends Component {
               id,
               quantity
             )}
+            style={{ width : "100%", height : 'auto' }}
           />
         </div>
         <h4 className="product-name">{this.props.name}</h4>

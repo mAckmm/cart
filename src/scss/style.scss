@@ -1,18 +1,53 @@
 @import 'base/index';
 @import 'components/index';
 
-.heading{
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    padding: 10px;
-    max-width: 960px;
-    margin: 12% 0 0 0;
-    @media (max-width: 768px) {
-      padding: 8px;
-    }
+* {
+  scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent!important;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-button {
+  background-color: transparent;
+  height : 0;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 1);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  /* background-color: var(--scrollbar-bg)!important; */
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track-piece {
+  /* background-color: var(--scrollbar-bg)!important; */
+  cursor: pointer;
+}
+
+.justify-content-center {
+  justify-content: center!important;
+}
+
+// .heading{
+//     display: flex;
+//     display: -webkit-flex;
+//     flex-wrap: wrap;
+//     -webkit-flex-wrap: wrap;
+//     padding: 10px;
+//     max-width: 960px;
+//     margin: 12% 0 0 0;
+//     @media (max-width: 768px) {
+//       padding: 8px;
+//     }
+// }
 
 .recommendations {
     display: flex;
@@ -52,3 +87,4 @@
       }
     }
   }
+

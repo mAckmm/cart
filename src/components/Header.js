@@ -186,11 +186,7 @@ class Header extends Component {
               onClick={this.handleCart.bind(this)}
               ref="cartButton"
             >
-              <img
-                className={this.props.cartBounce ? "tada" : " "}
-                src="https://res.cloudinary.com/sivadass/image/upload/v1493548928/icons/bag.png"
-                alt="Cart"
-              />
+              <i className={this.props.cartBounce ? "fas fa-cart-plus fa-2x" : "fas fa-shopping-cart fa-2x"}></i>
               {this.props.totalItems ? (
                 <span className="cart-count">{this.props.totalItems}</span>
               ) : (
